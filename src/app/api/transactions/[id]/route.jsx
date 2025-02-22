@@ -2,11 +2,12 @@ import connectDB from '@/lib/dbConnect';
 import Transaction from '@/models/Transaction';
 import { NextResponse } from 'next/server';
 
-//  GET a single transaction by ID
+// GET a single transaction by ID
 export async function GET(req, { params }) {
   try {
     await connectDB();
-    const transaction = await Transaction.findById(params.id);
+    const { id } = await params; // Await params and destructure
+    const transaction = await Transaction.findById(id);
     if (!transaction) {
       return NextResponse.json({ success: false, error: "Transaction not found" }, { status: 404 });
     }
@@ -16,15 +17,17 @@ export async function GET(req, { params }) {
   }
 }
 
+
 // PUT: Update a transaction
 export async function PUT(req, { params }) {
   try {
     await connectDB();
-    const { amount, date, description } = await req.json();
+    const { amount, date, description,category } = await req.json();
+    const { id } = await params; // Await params and destructure
 
     const updatedTransaction = await Transaction.findByIdAndUpdate(
-      params.id,
-      { amount, date, description },
+      id,
+      { amount, date, description,category },
       { new: true, runValidators: true }
     );
 
