@@ -14,12 +14,12 @@ import {
 import React, {useState,useEffect, useMemo } from "react";
 import moment from "moment";
 import { fetchTransactions, fetchBudgets, saveBudget, deleteBudget, saveTransaction, updateTransaction, deleteTransaction } from "@/app/lib/api";
-import SummaryCards from "@/app/lib/components/SummaryCards";
-import BudgetForm from "@/app/lib/components/BudgetForm";
-import BudgetList from "@/app/lib/components/BudgetList";
-import SpendingInsights from "@/app/lib/components/SpendingInsights";
-import TransactionForm from "@/app/lib/components/TransactionForm";
-import TransactionList from "@/app/lib/components/TransactionList";
+import SummaryCards from "@/app/components/SummaryCards";
+import BudgetForm from "@/app/components/BudgetForm";
+import BudgetList from "@/app/components/BudgetList";
+import SpendingInsights from "@/app/components/SpendingInsights";
+import TransactionForm from "@/app/components/TransactionForm";
+import TransactionList from "@/app/components/TransactionList";
 
 const DashboardLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
