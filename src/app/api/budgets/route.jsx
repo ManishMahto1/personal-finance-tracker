@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import connectDB from "lib/dbConnect";
-import Budget from "models/Budget";
+import connectDB from "@/app/lib/dbConnect";
+import Budget from "@/app/models/Budget";
 import mongoose from 'mongoose';
 
 // POST: Create/Update budget

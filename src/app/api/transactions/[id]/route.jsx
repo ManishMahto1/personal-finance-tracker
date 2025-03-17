@@ -1,5 +1,5 @@
-import connectDB from 'lib/dbConnect';
-import Transaction from 'models/Transaction';
+import connectDB from '@/app/lib/dbConnect';
+import Transaction from '@/app/models/Transaction';
 import { NextResponse } from 'next/server';
 
 // GET a single transaction by ID
