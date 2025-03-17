@@ -2,12 +2,9 @@
 
 A modern web application for managing personal finances, tracking expenses, and visualizing spending patterns using Next.js and MongoDB.
 
-### Category Pie Chart
 
-
-
-
-## ✨ Features
+## ✨ Dashboard with summary cards
+![web app Screenshot](/public/Personal-finance-image.png)
 
 ### Stage 1: Basic Transaction Tracking
 - Add/Edit/Delete transactions with amount, date, and description
@@ -22,15 +19,12 @@ A modern web application for managing personal finances, tracking expenses, and 
   - Total expenses
   - Category breakdown
   - Recent transactions
-![web app Screenshot](/public/Personal-finance-image.png)
+
 
 ### Stage 3: Budgeting System
 - Set monthly budgets per category
 - Budget vs actual spending comparison chart
 - Basic spending insights and alerts
-
-![web app Screenshot](/public/Personal-finance-image2.png)
-
 
 ## 🚀 Getting Started
 
