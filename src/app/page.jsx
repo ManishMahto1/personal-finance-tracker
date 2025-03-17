@@ -13,13 +13,13 @@ import {
 } from 'lucide-react';
 import React, {useState,useEffect, useMemo } from "react";
 import moment from "moment";
-import { fetchTransactions, fetchBudgets, saveBudget, deleteBudget, saveTransaction, updateTransaction, deleteTransaction } from "@/app/lib/api";
-import SummaryCards from "@/app/components/SummaryCards";
-import BudgetForm from "@/app/components/BudgetForm";
-import BudgetList from "@/app/components/BudgetList";
-import SpendingInsights from "@/app/components/SpendingInsights";
-import TransactionForm from "@/app/components/TransactionForm";
-import TransactionList from "@/app/components/TransactionList";
+import { fetchTransactions, fetchBudgets, saveBudget, deleteBudget, saveTransaction, updateTransaction, deleteTransaction } from "lib/api";
+import SummaryCards from "components/SummaryCards";
+import BudgetForm from "components/BudgetForm";
+import BudgetList from "components/BudgetList";
+import SpendingInsights from "components/SpendingInsights";
+import TransactionForm from "components/TransactionForm";
+import TransactionList from "components/TransactionList";
 
 const DashboardLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
