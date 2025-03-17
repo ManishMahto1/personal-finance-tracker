@@ -1,3 +1,4 @@
+/* dashboard or home layout */
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
